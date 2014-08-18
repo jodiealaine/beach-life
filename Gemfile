@@ -21,6 +21,9 @@ gem 'devise'
 # Use paperclip for image uploads
 gem "paperclip", "~> 4.1"
 
+# Use AWS to store images
+gem 'aws-sdk'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
