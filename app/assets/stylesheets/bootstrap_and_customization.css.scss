@@ -6,6 +6,7 @@ $navbar-inverse-link-color: white;
 $brand-primary: #16a085;
 $jumbotron-bg: #ecf0f1; 
 $jumbotron-color: #16a085;
+$body-color: white;
 
 @import 'bootstrap';
 
@@ -19,4 +20,8 @@ $jumbotron-color: #16a085;
 
 #checkbox-aligned {
 	margin-left: 0px;
+}
+
+body a {
+	color: white;
 }
