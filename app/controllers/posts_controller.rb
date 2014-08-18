@@ -2,7 +2,7 @@ class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
   before_action :correct_user, only: [:edit, :update, :destroy]
   before_action :authenticate_user!, except: [:index, :show]
-  
+
   # GET /posts
   def index
     @posts = Post.all
@@ -55,11 +55,11 @@ class PostsController < ApplicationController
     # Use to check correct user
     def correct_user
       @post = current_user.posts.find_by(id: params[:id])
-      redirect_to posts_path, notice: "Not authorised to edit this pin" if @pin.nil?
+      redirect_to posts_path, notice: "Not authorised to edit this post" if @post.nil?
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params.require(:post).permit(:description)
+      params.require(:post).permit(:description, :image)
     end
 end

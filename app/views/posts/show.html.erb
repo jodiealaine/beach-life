@@ -4,6 +4,7 @@
   <strong>Description:</strong>
   <%= @post.description %>
 </p>
+<%= image_tag @post.image.url %>
 <% if @post.user == current_user %>
 	<%= link_to 'Edit', edit_post_path(@post) %>
 <% end %>
