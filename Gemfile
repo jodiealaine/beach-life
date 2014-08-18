@@ -27,6 +27,11 @@ gem 'aws-sdk'
 gem 'jquery-turbolinks'
 gem 'masonry-rails'
 
+# Use will paginate for pagination
+gem 'will_paginate'
+
+gem 'will_paginate-bootstrap'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
